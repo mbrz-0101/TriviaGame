@@ -1,0 +1,76 @@
+/* Sets height, spaces rows of buttons */
+.btn-row {
+  margin: 3%;
+  height: 50%;
+}
+
+/* Styles buttons */
+.btn {
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+}
+
+/* Styles banner */
+#olympics-banner {
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+/* Hides answer buttons until shown on the second screen */
+#btn-1, #btn-2, #btn-3, #btn-4 {
+  display: none;
+}
+
+#begin-button {
+  width: 100%;
+}
+
+#correct-incorrect-row {
+  display: none;
+}
+
+#question {
+  display: none;
+}
+
+#results {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+#restart-button {
+  display: none;
+}
+
+/* Changes button colors and hover effects to match olympic rings */
+#btn-2 {
+  background-color: red;
+  border: red;
+}
+#btn-2:hover {
+  background-color: rgb(228, 3, 3);
+  border: rgb(228, 3, 3);
+  transition: .15s;
+}
+#btn-3 {
+  background-color: yellow;
+  border: yellow;
+  color: black;
+  font-weight: 450;
+}
+#btn-3:hover {
+  background-color: rgb(245, 245, 0);
+  border: rgb(245, 245, 0);
+  transition: .15s;
+}
+#btn-4 {
+  background-color: green;
+  border: green;
+}
+#btn-4:hover {
+  background-color: rgb(0, 114, 0);
+  border: rgb(0, 114, 0);
+  transition: .15s;
+}

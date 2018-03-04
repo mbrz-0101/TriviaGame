@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Olympics Trivia</title>
+  <link rel="icon" type="image/png" href="assets/images/olympics-icon.png"/>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- My styles -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
+
+</head>
+
+<!-- On load, runs javascript to set stage for Trivia Game -->
+
+<body onload="playTriviaGame();">
+
+  <!-- Banner -->
+  <div class="row" id="banner-row">
+
+    <div class="col-sm-0 col-md-3 col-lg-4"></div>
+
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <img src="assets/images/winter-olympics-banner.jpg" id="olympics-banner" />
+    </div>
+
+    <div class="col-sm-0 col-md-3 col-lg-4"></div>
+
+  </div>
+
+  <!-- Question and Timer Row -->
+  <div class="row">
+
+    <div class="col-sm-0 col-md-2"></div>
+
+    <div class="col-sm-12 col-md-8 text-center">
+      <!-- Welcome statement that only shows at start of game -->
+      <h1 id="welcome-statement">Welcome to Winter Olympics Trivia!</h1>
+      <!-- Question element is where the question is displayed throughout the game -->
+      <h1 id="question">Question</h1>
+      <!-- The timer element is where the timer data from the Trivia Game is displayed -->
+      <h4 id="timer">Timer: 20s</h4>
+    </div>
+
+    <div class="col-sm-0 col-md-2"></div>
+
+  </div>
+
+  <!-- Game space -->
+  <div class="row">
+    <div class="col-sm-0 col-md-2 col-lg-3"></div>
+
+    <div class="col-sm-12 col-md-8 col-lg-6 text-center">
+
+      <!-- Displays correct or incorrect after every question -->
+      <div class="row" id="correct-incorrect-row">
+        <div class="col-md-12">
+          <h1>Correct!</h1>
+        </div>
+      </div>
+
+      <div class="row btn-row text-center">
+
+        <!-- Begin button that only shows on first screen -->
+        <button class="btn btn-primary" id="begin-button">Begin!</button>
+
+        <!-- Shows score at end of game. Hidden until last screen -->
+        <h1 id="results"></h1>
+
+        <!-- Allows restart at end of game. Hidden until last screen -->
+        <button class="btn btn-primary" id="restart-button">Restart</button>
+
+        <div class="col-sm-12 col-md-6 btn-col">
+          <button id="btn-1" class="btn btn-primary">Answer 1</button>
+        </div>
+
+        <div class="col-sm-12 col-md-6 btn-col">
+          <button id="btn-2" class="btn btn-primary">Answer 2</button>
+        </div>
+
+      </div>
+
+      <div class="row btn-row">
+
+        <div class="col-sm-12 col-md-6 btn-col">
+          <button id="btn-3" class="btn btn-primary">Answer 3</button>
+        </div>
+
+        <div class="col-sm-12 col-md-6 btn-col">
+          <button id="btn-4" class="btn btn-primary">Answer 4</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-sm-0 col-md-2 col-lg-3"></div>
+
+  </div>
+
+
+  <!-- Trivia Game Script -->
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
